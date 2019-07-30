@@ -7,3 +7,4 @@ WEB前端思维导图(持续更新中...)
 
 ### 动态
 + 新增.html文件,但是该文件不适合阅读,建议扫描二维码
++ [Markdown基本语法](https://www.jianshu.com/p/191d1e21f7ed)

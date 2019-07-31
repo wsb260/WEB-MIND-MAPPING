@@ -1,0 +1,23 @@
+### 1.写一个方法把下划线命名转成大驼峰命名
+
+```
+// 1.传入参数,判断字符串类型,非返回
+// 2.通过split('_')把字符串分割成数组
+// 3.遍历数组把每一项开头转换成大写字母,并把每一项都拼接到一起
+// 4.返回字符串
+function changeStr(str){
+  let arr = [];
+  let newStr = '';
+  if(!str||str===' '|| typeof str !== 'string'){
+    return false;
+  }
+ arr = str.split('_');
+ arr.map(item => {
+   if(item){ //过滤空字符
+      newStr += item.substr(0,1).toUpperCase()+item.substr(1)
+   }
+ });
+ console.log(newStr);
+}
+changeStr('_abc_ghe_nb_w_') // 输出:AbcGheNbW
+```

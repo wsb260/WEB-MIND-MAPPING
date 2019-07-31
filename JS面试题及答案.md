@@ -21,8 +21,8 @@ function changeStr(str){
 }
 changeStr('_abc_ghe_nb_w_') // 输出:AbcGheNbW
 ```
-### 写一个把字符串大小写切换的方法
-
+### 2.写一个把字符串大小写切换的方法
+```
 // 1.test() 方法用于检测一个字符串是否匹配某个模式,返回Boolean值
 // 2.toUpperCase() 转换成大写,toLowerCase()转换成小写
 function changeStr(str){
@@ -39,7 +39,8 @@ function changeStr(str){
 }
 
 changeStr('aAbBcC') // 输出:AaBbCb
-
+```
+```
 //$1、$2、...、$99与 regexp 中的第 1 到第 99 个子表达式相匹配的文本
 //function（a,b,c）一共可以传入3个参数，第一个为匹配到的字符串，第二个为匹配字符串的起始位置，第三个为调用replace方法的字符串本身,(非全局匹配的情况下/g),下例为多组匹配,s1,s2分别对应$1,$2
 function caseConvert(str){
@@ -48,3 +49,4 @@ function caseConvert(str){
   })
 }
 console.log(caseConvert('aSa')) //AsA
+```

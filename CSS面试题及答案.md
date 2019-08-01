@@ -1,5 +1,5 @@
 
-### 1.用css创建一个三角形
+### 1.用css创建一个三角形 [例子Demo](http://jsrun.pro/EwbKp)
 > 创建一个div，宽高都为0，实现效果如下，发现border的四个边都是一个三角形，要实现三角形只需将其中几个边background设置为transparent，即可得到三角形
 ```
 > html

@@ -32,3 +32,52 @@
 }
 
 ```
+
+### 2.css圣杯布局
+
+1.
+```
+> html
+<div id="container">
+  <div id="center" class="column">111122223334444111122223334444111122223334444111122223334444</div>
+  <div id="left" class="column"></div>
+  <div id="right" class="column"></div>
+</div>
+```
+```
+> css
+body {
+  min-width: 550px;
+}
+
+#container {
+  padding-left: 200px; 
+  padding-right: 150px;
+}
+
+#container .column {
+  float: left;
+  height:200px;
+}
+
+#center {
+  width: 100%;
+  background:#ffee33;
+  word-break:break-all;
+}
+
+#left {
+  width: 200px; 
+  margin-left: -100%;
+  position: relative;
+  right: 200px;
+  background:#2233dd;
+}
+
+#right {
+  width: 150px; 
+  margin-right: -150px; 
+  background:#55eeee;
+  position:relative;
+}
+```

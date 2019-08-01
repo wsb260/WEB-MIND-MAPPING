@@ -50,3 +50,26 @@ function caseConvert(str){
 }
 console.log(caseConvert('aSa')) //AsA
 ```
+
+### 3.统计某一字符或字符串在另一个字符串中出现的次数
+```
+// 方法1
+var str = 'aabbcaacddaabbccdd'
+var str2 = 'aa'
+
+const contSvg = (s1,s2) => {
+  var arr = [];
+  arr = s1.split(s2);
+  console.log(arr.length-1);
+}
+
+contSvg(str,str2) // 输出3
+// 方法2
+// eval() 函数可计算某个字符串，并执行其中的的 JavaScript 代码。
+const strCount = (str, target) => {
+  if (!target) return count
+	 return  str.match(eval("/"+target+"/g")).length
+}
+
+console.log(strCount('abcdef abcdef a', 'abc')) // 输出2
+```
